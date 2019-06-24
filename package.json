@@ -1,0 +1,56 @@
+{
+  "name": "@xfe/og-wechat-observer",
+  "version": "0.0.1",
+  "description": "",
+  "source": "src/index.js",
+  "main": "dist/og-wechat-observer.js",
+  "module": "dist/og-wechat-observer.mjs",
+  "unpkg": "dist/og-wechat-observer.umd.js",
+  "scripts": {
+    "eslint": "eslint src/*.js --ignore-pattern *.min.js",
+    "prettier": "prettier --check src/**/*.js",
+    "test": "npm run eslint",
+    "prebuild": "npm run test",
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "publish": "release-it",
+    "precise-commits": "precise-commits"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "precise-commits"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XFETeam/og-wechat-observer.git"
+  },
+  "keywords": [
+    "weixin",
+    "wechat",
+    "og",
+    "open graph",
+    "分享",
+    "微信分享"
+  ],
+  "author": "She Ailun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/XFETeam/og-wechat-observer/issues"
+  },
+  "homepage": "https://github.com/XFETeam/og-wechat-observer#readme",
+  "devDependencies": {
+    "eslint": "5.16.0",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-import": "2.17.3",
+    "husky": "^2.4.1",
+    "microbundle": "^0.11.0",
+    "precise-commits": "^1.0.2",
+    "prettier": "1.18.2",
+    "pretty-quick": "^1.11.1",
+    "release-it": "^12.3.0",
+    "travis-size-report": "^1.1.0",
+    "uglify-js": "3.6.0"
+  }
+}

@@ -1,8 +1,10 @@
-.DS_Store
-*~
+.editorconfig
 
 node_modules/
 npm-debug.log
 yarn-error.log
+yarn.lock
 
 coverage/
+.travis.yml
+*.test.js
